@@ -16,12 +16,14 @@ def fibbon_gen(number):
         second = next
         yield next # yield next value
         
-
-# value = fibbon_gen(10) - this wont work: function returns generator-object not value
         
-
+print "Iterate over generator"
 for i in fibbon_gen(12):
     print i
-
     
     
+print "Call each value yourself"
+zm = fibbon_gen(10)
+print next(zm)
+print next(zm)
+print next(zm)    
