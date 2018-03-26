@@ -1,5 +1,5 @@
 '''
-set is collection of unique elements
+set is a collection of unique elements
 '''
 from sets import Set
 #uniqe elements
