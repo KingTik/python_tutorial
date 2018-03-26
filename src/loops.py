@@ -33,3 +33,12 @@ while i<5:
      i+=1
 print stri
 
+### loops can have else statement
+i = 5
+stri = ""
+while i<5:
+     stri+=str(i)
+     i+=1
+else:
+    print "Didnt went into loop"
+print "stri: " + stri
