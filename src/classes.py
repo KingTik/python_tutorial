@@ -36,7 +36,8 @@ class Derived(Custom):
         print self.member
         print self.__priv #this will throw error - didnt inherit that
 
-
+    def say_hello(self):
+        print "Just want to say hello"
 
 # creating object of a user defined class
 obj = Custom()
@@ -59,3 +60,6 @@ der_obj.display()
 
 
 # der_obj.inherited_priv()
+
+# use method on class and pass object
+Derived.say_hello(der_obj)
