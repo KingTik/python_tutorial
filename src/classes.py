@@ -63,3 +63,38 @@ der_obj.display()
 
 # use method on class and pass object
 Derived.say_hello(der_obj)
+
+
+
+'''
+Overloading:
+
+__add__(self, other)                                a1 + a2
+__sub__(self, other)                                a1 - a2
+__mul__(self, other)                                a1 * a2
+__matmul__(self, other)                             a1 @ a2 (Python 3.5)
+__div__(self, other)                                a1 / a2 (Python 2 only)
+__truediv__(self, other)                            a1 / a2 (Python 3)
+__floordiv__(self, other)                           a1 // a2
+__mod__(self, other)                                a1 % a2
+__pow__(self, other[, modulo])                      a1 ** a2
+__lshift__(self, other)                             a1 << a2
+__rshift__(self, other)                             a1 >> a2
+__and__(self, other)                                a1 & a2
+__xor__(self, other)                                a1 ^ a2
+__or__(self, other)                                 a1 | a2
+__neg__(self)                                       -a1
+__pos__(self)                                       +a1
+__invert__(self)                                    ~a1
+__lt__(self, other)                                 a1 < a2
+__le__(self, other)                                 a1 <= a2
+__eq__(self, other)                                 a1 == a2
+__ne__(self, other)                                 a1 != a2
+__gt__(self, other)                                 a1 > a2
+__ge__(self, other)                                 a1 >= a2
+__getitem__(self, index)                            a1[index]
+__contains__(self, other)                           a2 in a1
+__call__(self, *args, **kwargs)                     a1(*args, **kwargs)
+
+source: http://goalkicker.com/PythonBook/
+'''
