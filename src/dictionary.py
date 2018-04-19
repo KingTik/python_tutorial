@@ -30,3 +30,16 @@ for key, value in my_dict.items():
 from collections import defaultdict
 my_dict = defaultdict(lambda: 0)
 print my_dict["hello"]
+
+## try - except
+my_dict = {}
+try:
+    print my_dict['key']
+except KeyError:
+    print 'No such key!'
+
+# instead of:
+# if 'key' in my_dict:
+#   print my_dict['key']
+# else:
+#   print 'no such key!'
