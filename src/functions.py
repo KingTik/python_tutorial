@@ -52,6 +52,14 @@ print svar
 aFunc(a) #mutable
 print a
 
+def listFunc(l = []): # careful with immutable as default arg
+    print l
+    l.append(1)
+
+listFunc()
+listFunc()
+listFunc()
+
 '''
 immutable types:
     int
