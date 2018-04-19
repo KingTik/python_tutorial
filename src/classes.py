@@ -98,3 +98,24 @@ __call__(self, *args, **kwargs)                     a1(*args, **kwargs)
 
 source: http://goalkicker.com/PythonBook/
 '''
+
+
+## Initializing outside __init__
+class whereToInitialize:
+    value = {}
+
+whereIndeed1 = whereToInitialize()
+whereIndeed1.value['hello'] = "world" # put in on one instance
+whereIndeed2 = whereToInitialize()
+print whereIndeed2.value['hello'] # another instance still has access (static)
+#--
+class whereToInitializeInit:
+    def __init__(self):
+        self.value = {}
+
+
+whereIndeed1 = whereToInitializeInit()
+whereIndeed1.value['hello'] = "world"
+whereIndeed2 = whereToInitializeInit()
+# print whereIndeed2.value['hello']  # keyerror!
+
