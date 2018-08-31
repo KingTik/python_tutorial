@@ -9,10 +9,11 @@ def bubble(data):
         return data
 
     for i in range(length):
-        for j in range(i, length):
+        for j in range(i+1, length):
             if newData[i] > newData[j]:
+
                 tmp = newData[i]
-                newData[i] = data[j]
+                newData[i] = newData[j]
                 newData[j] = tmp
 
     return newData
